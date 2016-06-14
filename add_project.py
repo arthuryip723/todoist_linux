@@ -22,28 +22,28 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName(_fromUtf8("Dialog"))
-        Dialog.resize(400, 300)
-        self.buttonBox = QtGui.QDialogButtonBox(Dialog)
+class Ui_AddProject(object):
+    def setupUi(self, AddProject):
+        AddProject.setObjectName(_fromUtf8("AddProject"))
+        AddProject.resize(400, 300)
+        self.buttonBox = QtGui.QDialogButtonBox(AddProject)
         self.buttonBox.setGeometry(QtCore.QRect(30, 240, 341, 32))
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
         self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
-        self.lineEdit = QtGui.QLineEdit(Dialog)
+        self.lineEdit = QtGui.QLineEdit(AddProject)
         self.lineEdit.setGeometry(QtCore.QRect(140, 70, 113, 21))
         self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
-        self.label = QtGui.QLabel(Dialog)
+        self.label = QtGui.QLabel(AddProject)
         self.label.setGeometry(QtCore.QRect(50, 70, 59, 16))
         self.label.setObjectName(_fromUtf8("label"))
 
-        self.retranslateUi(Dialog)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Dialog.accept)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), Dialog.reject)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(AddProject)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), AddProject.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), AddProject.reject)
+        QtCore.QMetaObject.connectSlotsByName(AddProject)
 
-    def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog", None))
-        self.label.setText(_translate("Dialog", "Name", None))
+    def retranslateUi(self, AddProject):
+        AddProject.setWindowTitle(_translate("AddProject", "Dialog", None))
+        self.label.setText(_translate("AddProject", "Name", None))
 
